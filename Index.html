@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progression — Privacy Policy &amp; Terms of Service</title>
+  <style>
+    :root {
+      --bg: #0D0D0D;
+      --surface: #1A1A1A;
+      --border: #2E2E2E;
+      --primary: #E8FF47;
+      --text: #FFFFFF;
+      --text-secondary: #A0A0A0;
+      --text-muted: #5A5A5A;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    .logo { text-align: center; margin: 40px 0 10px; }
+    .logo h1 { color: var(--primary); font-size: 32px; font-weight: 800; }
+    .logo p { color: var(--text-muted); font-size: 14px; margin-top: 4px; }
+    .tabs {
+      display: flex; gap: 4px; background: var(--surface); border-radius: 12px;
+      padding: 4px; margin: 30px 0 20px;
+    }
+    .tab {
+      flex: 1; text-align: center; padding: 10px; border-radius: 10px;
+      cursor: pointer; font-weight: 600; font-size: 14px;
+      color: var(--text-secondary); transition: all 0.2s;
+    }
+    .tab.active { background: var(--primary); color: #0D0D0D; }
+    .tab:hover:not(.active) { background: var(--border); }
+    .effective { text-align: center; color: var(--text-muted); font-size: 12px; margin-bottom: 20px; }
+    .section {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; padding: 20px; margin-bottom: 12px;
+    }
+    .section h3 { color: var(--text); font-size: 16px; margin-bottom: 8px; }
+    .section p { color: var(--text-secondary); font-size: 13px; white-space: pre-line; }
+    .content { display: none; }
+    .content.active { display: block; }
+    footer {
+      text-align: center; padding: 40px 0 20px;
+      color: var(--text-muted); font-size: 12px;
+    }
+    footer a { color: var(--primary); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <h1>Progression</h1>
+      <p>Gym Tracker &amp; Workout Planner</p>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active" onclick="showTab(0)">Privacy Policy</div>
+      <div class="tab" onclick="showTab(1)">Terms of Service</div>
+    </div>
+
+    <p class="effective">Effective date: March 10, 2026</p>
+
+    <!-- ─── PRIVACY POLICY ──────────────────────────────── -->
+    <div id="tab-0" class="content active">
+      <div class="section">
+        <h3>Introduction</h3>
+        <p>Progression ("we", "our", or "us") is a fitness tracking mobile application. This Privacy Policy explains how we collect, use, and protect your personal information when you use our app. By using Progression, you agree to the practices described in this policy.</p>
+      </div>
+      <div class="section">
+        <h3>Information We Collect</h3>
+        <p><strong>Account Information:</strong> When you sign up, we collect your name, email address, and password (securely hashed by Firebase Authentication).
+
+<strong>Fitness Data:</strong> Workout logs, exercise details, sets, reps, weights, body measurements (weight, height, body part measurements), and fitness goals you choose to track.
+
+<strong>Profile Photo:</strong> If you upload a profile photo, it is stored securely in our database.
+
+<strong>App Preferences:</strong> Theme preference (dark/light), unit preference (metric/imperial), notification settings. These are stored locally on your device.</p>
+      </div>
+      <div class="section">
+        <h3>How We Use Your Information</h3>
+        <p>• Provide and personalise your fitness tracking experience
+• Display your workout history, progress charts, and statistics
+• Show community workout plans (your display name appears as the creator if you share a plan)
+• Send local notification reminders (if enabled by you)
+• Improve app functionality and fix bugs</p>
+      </div>
+      <div class="section">
+        <h3>Data Storage &amp; Security</h3>
+        <p>Your data is stored securely using Google Firebase (Firestore database and Firebase Authentication). All communication between the app and our servers is encrypted via HTTPS. Firestore security rules ensure that only you can read and modify your personal data. Community workout plans are readable by all authenticated users.</p>
+      </div>
+      <div class="section">
+        <h3>Data Sharing</h3>
+        <p>We do NOT sell, trade, or share your personal information with third parties. The only data visible to other users is workout plans you choose to publish to the community (plan name, exercises, and your display name). Your email, workout logs, body measurements, and other personal data are never shared.</p>
+      </div>
+      <div class="section">
+        <h3>Third-Party Services</h3>
+        <p>We use the following third-party services:
+
+• Firebase Authentication — for secure sign-in and account management
+• Cloud Firestore — for secure data storage
+• Expo Notifications — for local reminders (no push server; reminders stay on your device)
+
+These services have their own privacy policies. We recommend reviewing Google Firebase's privacy policy at https://firebase.google.com/support/privacy.</p>
+      </div>
+      <div class="section">
+        <h3>Your Rights</h3>
+        <p>You have the right to:
+
+• Access your data — all your data is visible within the app
+• Edit your data — update your profile, measurements, and workout logs at any time
+• Delete your account — use the "Delete Account" option in Profile to permanently delete all your data from our servers
+• Opt out of notifications — disable any or all reminders in the Notifications settings</p>
+      </div>
+      <div class="section">
+        <h3>Children's Privacy</h3>
+        <p>Progression is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, please contact us so we can delete it.</p>
+      </div>
+      <div class="section">
+        <h3>Changes to This Policy</h3>
+        <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the app with an updated effective date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+      </div>
+      <div class="section">
+        <h3>Contact Us</h3>
+        <p>If you have any questions about this Privacy Policy, please contact us at:
+
+Email: <a href="mailto:progressiongymapp@gmail.com" style="color:#E8FF47">progressiongymapp@gmail.com</a></p>
+      </div>
+    </div>
+
+    <!-- ─── TERMS OF SERVICE ────────────────────────────── -->
+    <div id="tab-1" class="content">
+      <div class="section">
+        <h3>Acceptance of Terms</h3>
+        <p>By downloading, installing, or using Progression, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the app.</p>
+      </div>
+      <div class="section">
+        <h3>Use of the App</h3>
+        <p>Progression is a fitness tracking tool provided for personal, non-commercial use. You agree to:
+
+• Provide accurate information when creating your account
+• Keep your login credentials secure and confidential
+• Use the app in compliance with all applicable laws
+• Not attempt to access other users' data or disrupt the service</p>
+      </div>
+      <div class="section">
+        <h3>User Content</h3>
+        <p>You retain ownership of all content you create (workout plans, logs, measurements). By publishing a workout plan to the community, you grant other users permission to view and use that plan for their own training. You can delete your community plans at any time.</p>
+      </div>
+      <div class="section">
+        <h3>Health Disclaimer</h3>
+        <p>Progression is a tracking and planning tool only. It does NOT provide medical advice, diagnoses, or treatment. Always consult a qualified healthcare professional before starting any exercise programme. We are not responsible for any injuries or health issues that may arise from exercises logged or planned in the app. Use the app at your own risk.</p>
+      </div>
+      <div class="section">
+        <h3>Account Termination</h3>
+        <p>You may delete your account at any time through the app (Profile → Delete Account). This permanently removes all your data from our servers. We reserve the right to suspend or terminate accounts that violate these terms or are used for abuse.</p>
+      </div>
+      <div class="section">
+        <h3>Limitation of Liability</h3>
+        <p>Progression is provided "as is" without warranties of any kind. We are not liable for any direct, indirect, incidental, or consequential damages arising from your use of the app, including but not limited to data loss, service interruptions, or inaccuracies in tracking.</p>
+      </div>
+      <div class="section">
+        <h3>Intellectual Property</h3>
+        <p>The Progression app, including its design, code, branding, and pre-built workout plans, is the intellectual property of Progression. You may not copy, modify, distribute, or reverse-engineer any part of the app without written permission.</p>
+      </div>
+      <div class="section">
+        <h3>Changes to Terms</h3>
+        <p>We may update these Terms of Service from time to time. Continued use of the app after changes constitutes acceptance of the updated terms.</p>
+      </div>
+      <div class="section">
+        <h3>Contact</h3>
+        <p>For questions about these Terms of Service, contact us at:
+
+Email: <a href="mailto:progressiongymapp@gmail.com" style="color:#E8FF47">progressiongymapp@gmail.com</a></p>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2026 Progression. All rights reserved.<br />
+      <a href="mailto:progressiongymapp@gmail.com">progressiongymapp@gmail.com</a>
+    </footer>
+  </div>
+
+  <script>
+    function showTab(idx) {
+      document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.getElementById('tab-' + idx).classList.add('active');
+      document.querySelectorAll('.tab')[idx].classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
